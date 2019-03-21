@@ -16,7 +16,7 @@ class page_size
         $dom = new DOMDocument();
         @$dom->loadHTMLFile($url);
 
-        //javascript, css, ico and img elements are contained
+        //javascript, css, ico and img elements are included
         $element_array=array('script'=>'src','link'=>'href','img'=>'src');
 
         foreach ($element_array as $type=>$source)
